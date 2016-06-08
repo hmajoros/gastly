@@ -1,0 +1,22 @@
+{{#foreach posts}}
+
+{{#if @first}}
+  <div class="row">
+{{else}}
+  {{#if @odd}}
+  </div><div class="row">
+  {{/if}}
+{{/if}}
+
+  <article class="col-xs-12 col-md-6 {{post_class}}">
+    <h4 class="date">{{date}}</h4>
+    <a href="{{url}}" class="title">{{title}}</a>
+    <p class="excerpt">{{excerpt words="30"}}</p>
+  </article>
+
+{{#if @last}}
+  </div>
+{{/if}}
+{{/foreach}}
+
+<!-- TODO: images? read more tag -->

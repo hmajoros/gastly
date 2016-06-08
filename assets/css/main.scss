@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+@import 'reset.css';
+@import 'shadows';
+@import 'buttons';
+@import 'post';
+@import 'post-styles';
+@import 'index';
+

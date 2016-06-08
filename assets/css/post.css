@@ -1,0 +1,164 @@
+.post-template header {
+  height: 80vh; }
+  .post-template header main {
+    position: absolute;
+    width: 100%;
+    top: 40vh;
+    transform: translateY(-50%);
+    padding: 16px 32px; }
+  .post-template header .home {
+    margin-bottom: 32px;
+    color: #999;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.62, 0.28, 0.23, 0.99); }
+    .post-template header .home:hover {
+      color: #333; }
+  .post-template header #title {
+    margin-bottom: 48px;
+    font-family: 'Yeseva One';
+    font-size: 50px;
+    color: #333; }
+  .post-template header #info {
+    margin-bottom: 8px;
+    font-family: 'Roboto';
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #777; }
+    .post-template header #info .tag:first-of-type {
+      margin-left: 24px; }
+    .post-template header #info .tag {
+      margin-left: 8px;
+      text-decoration: none;
+      color: #bbb;
+      transition: all 0.2s cubic-bezier(0.62, 0.28, 0.23, 0.99); }
+      .post-template header #info .tag:hover {
+        color: #999; }
+  .post-template header.img {
+    background-color: rgba(59, 78, 183, 0.75);
+    background-blend-mode: lighten;
+    background-size: cover;
+    background-position: center; }
+    .post-template header.img main {
+      background: rgba(200, 200, 200, 0.1); }
+    .post-template header.img .home {
+      color: rgba(255, 255, 255, 0.5); }
+      .post-template header.img .home:hover {
+        color: #eee; }
+    .post-template header.img #title {
+      color: #eee; }
+    .post-template header.img #info {
+      color: rgba(255, 255, 255, 0.5); }
+    .post-template header.img #info .tag {
+      color: rgba(255, 255, 255, 0.7); }
+      .post-template header.img #info .tag:hover {
+        color: #eee; }
+.post-template .content {
+  background: #f7f7f7;
+  padding: 32px; }
+  .post-template .content p {
+    margin-bottom: 18px;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.75em;
+    color: #333; }
+.post-template footer {
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: -1px;
+  background: #f7f7f7;
+  border-top: 1px solid #e7e7e7; }
+.post-template .prev-post, .post-template .next-post {
+  width: 50%;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.62, 0.28, 0.23, 0.99); }
+  .post-template .prev-post > .post-info, .post-template .next-post > .post-info {
+    display: block;
+    margin-bottom: 6px;
+    font-family: 'Roboto';
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #999; }
+  .post-template .prev-post > .post-title, .post-template .next-post > .post-title {
+    display: block;
+    font-family: 'Yeseva One';
+    font-size: 20px;
+    color: #444; }
+  .post-template .prev-post:hover, .post-template .next-post:hover {
+    background-color: #dedede;
+    text-decoration: none; }
+.post-template .filler {
+  width: 50%; }
+.post-template .prev-post {
+  left: 0;
+  text-align: left;
+  padding: 32px 12px 32px 32px; }
+.post-template .next-post {
+  right: 0;
+  text-align: right;
+  padding: 32px 32px 32px 12px; }
+@media screen and (min-width: 768px) {
+  .post-template body {
+    overflow: hidden; }
+  .post-template header {
+    position: relative;
+    height: 100vh;
+    width: 50%;
+    float: left; }
+    .post-template header main {
+      top: 50vh; }
+  .post-template .content {
+    position: relative;
+    height: 100vh;
+    margin-left: 50%;
+    padding: 64px;
+    overflow: scroll; }
+    .post-template .content hr {
+      border-color: #e7e7e7;
+      margin-top: 24px;
+      margin-bottom: 0; }
+  .post-template footer {
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: -1px; }
+  .post-template .prev-post, .post-template .next-post {
+    width: 50%;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.62, 0.28, 0.23, 0.99); }
+    .post-template .prev-post > .post-info, .post-template .next-post > .post-info {
+      display: block;
+      margin-bottom: 6px;
+      font-family: 'Roboto';
+      font-size: 11px;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #999; }
+    .post-template .prev-post > .post-title, .post-template .next-post > .post-title {
+      display: block;
+      font-family: 'Yeseva One';
+      font-size: 20px;
+      color: #444; }
+    .post-template .prev-post:hover, .post-template .next-post:hover {
+      background-color: #dedede;
+      text-decoration: none; }
+  .post-template .filler {
+    width: 50%; }
+  .post-template .prev-post {
+    left: 0;
+    text-align: left;
+    padding: 32px 16px 32px 64px; }
+  .post-template .next-post {
+    right: 0;
+    text-align: right;
+    padding: 32px 64px 32px 16px; } }
+
+/*# sourceMappingURL=post.css.map */

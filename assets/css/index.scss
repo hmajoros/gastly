@@ -1,0 +1,125 @@
+.home-template {
+  
+  header {
+    height: 80vh;
+
+    .face {
+      height: 80vh;
+      background-color: rgb(59, 78, 183);
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: screen;
+    }
+
+    .info {
+      position: absolute;
+      top: 40vh;
+      text-align: center;
+      transform: translateY(-50%);
+      mix-blend-mode: overlay;
+
+      #name {
+        margin-bottom: 12px;
+        font-family: 'Yeseva One';
+        font-size: 20vw;
+        color: white;
+      }
+
+      #about {
+        font-family: 'Open Sans';
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 1.75em;
+        color: white; 
+      }
+    }
+  }
+
+  main {
+    background-color: #3B4EB7;
+    color: white; 
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    .row {
+      padding: 0 32px;
+    }
+
+    article {
+      padding: 32px !important;
+
+      .date {
+        margin-bottom: 8px;
+        font-family: 'Roboto';
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: rgba(255, 255, 255, 0.4);
+      }
+
+      .title {
+        display: block;
+        margin-bottom: 16px;
+        font-family: 'Yeseva One';
+        font-size: 40px;
+        text-decoration: none;
+        color: #efefef;
+      }
+
+      .excerpt {
+        font-family: 'Open Sans';
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 1.75em;
+        color: rgba(255, 255, 255, 0.6);
+      }
+    }
+  }
+
+  @media screen and (min-width: 650px) {
+
+    header {
+      height: 500px;
+      background-color: #fefefe;
+
+      .face {
+        width: 40%;
+        height: 500px;
+
+      }
+
+      .info {
+        position: absolute;
+        top: 250px;
+        margin-left: 40%;
+        padding: 0 64px;
+        mix-blend-mode: normal;
+
+        #name {
+          color: #333;
+          font-size: 5vw;
+        }
+
+        #about {
+          color: #999;
+          text-align: left;
+        }
+      }
+    }
+
+    main {
+      padding-top: 64px;
+      padding-bottom: 64px;
+
+      .row {
+        padding: 0 64px;
+      }
+
+      article {
+        padding: 64px !important;
+
+      }
+    }
+  }
+}

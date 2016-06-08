@@ -1,0 +1,35 @@
+.post-template .content img {
+  width: 100%; }
+.post-template .content h1, .post-template .content h2, .post-template .content h3, .post-template .content h4, .post-template .content h5, .post-template .content h6 {
+  font-family: 'Roboto Slab';
+  color: #333;
+  margin-top: 32px;
+  margin-bottom: 8px; }
+.post-template .content h1 {
+  font-size: 36px; }
+.post-template .content h2 {
+  font-size: 30px; }
+.post-template .content h3 {
+  font-size: 24px; }
+.post-template .content h4 {
+  font-family: 'Roboto';
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #777; }
+.post-template .content em {
+  font-style: italic; }
+.post-template .content strong {
+  font-weight: 600; }
+.post-template .content blockquote {
+  margin-bottom: 16px;
+  padding: 10px 0 10px 20px;
+  border-left: 6px solid #3B4EB7; }
+  .post-template .content blockquote > p {
+    margin: 0;
+    font-family: 'Roboto Condensed';
+    font-size: 19px !important;
+    font-weight: 400; }
+
+/*# sourceMappingURL=post-styles.css.map */

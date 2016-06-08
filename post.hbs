@@ -1,0 +1,40 @@
+{{!< default}}
+
+{{#post}}
+
+<header {{#if image}}class="img" style="background-image:url({{image}})"{{/if}}>
+
+  <main>
+    <a href="{{@blog.url}}"><i class="material-icons home">home</i></a>
+    <h2 id="info">{{date published_at format="MMMM DD, YYYY"}}{{> post_tags}}</h2>
+    <h1 id="title">{{title}}</h1>
+  </main>
+     
+</header>
+<section class="content content-full">
+
+  <main>
+    
+    {{content}}
+
+  </main>
+  <footer>
+    {{#prev_post}}
+      <a href="{{url}}" class="prev-post">
+        <span class="post-info">Previous Post</span>
+        <span class="post-title">{{title}}</span>
+      </a>
+    {{else}}
+      <span class="filler"></span>
+    {{/prev_post}}
+
+    {{#next_post}}
+      <a href="{{url}}" class="next-post">
+        <span class="post-info">Next Post</span>
+        <span class="post-title">{{title}}</span>
+      </a>
+    {{/next_post}}
+  </footer>
+</section>
+
+{{/post}}

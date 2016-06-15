@@ -2,39 +2,61 @@
 
 {{#post}}
 
-<header {{#if image}}class="img" style="background-image:url({{image}})"{{/if}}>
+<main class="container-fluid">
+  <div class="row">  
+    <article class="col-xs-12">
 
-  <main>
-    <a href="{{@blog.url}}"><i class="material-icons home">home</i></a>
-    <h2 id="info">{{date published_at format="MMMM DD, YYYY"}}{{> post_tags}}</h2>
-    <h1 id="title">{{title}}</h1>
-  </main>
-     
-</header>
-<section class="content content-full">
+      <header {{#if image}} style="background-image:url({{image}})"{{/if}}></header>
 
-  <main>
-    
-    {{content}}
+      <main>
+        <section class="date">{{date}}</section>
+        <h1>{{title}}</h1>
+      
+        {{content}}
+      </main>
 
-  </main>
-  <footer>
+    </article>
+  </div>
+  <footer class="row">
     {{#prev_post}}
-      <a href="{{url}}" class="prev-post">
-        <span class="post-info">Previous Post</span>
-        <span class="post-title">{{title}}</span>
+    <div class="col-sm-6">
+      <a href="{{url}}" class="prev-post" data-img="{{image}}">
+        <div class="post-pager">Previous Post</div>
+        <div class="post-title">{{title}}</div>
       </a>
+    </div>
     {{else}}
-      <span class="filler"></span>
+      <div class="col-sm-6 filler"></div>
     {{/prev_post}}
-
     {{#next_post}}
-      <a href="{{url}}" class="next-post">
-        <span class="post-info">Next Post</span>
-        <span class="post-title">{{title}}</span>
-      </a>
+    <div class="col-sm-6">
+      <a href="{{url}}" class="next-post" data-img="{{image}}">
+        <div class="post-pager">Next Post</div>
+        <div class="post-title">{{title}}</div>
+      </a> 
+    </div>
+    {{else}}
+      <div class="col-sm-6 filler"></div>
     {{/next_post}}
   </footer>
-</section>
+</main>
+
+<!--<footer>
+  {{#prev_post}}
+    <a href="{{url}}" class="prev-post">
+      <span class="post-info">Previous Post</span>
+      <span class="post-title">{{title}}</span>
+    </a>
+  {{else}}
+    <span class="filler"></span>
+  {{/prev_post}}
+
+  {{#next_post}}
+    <a href="{{url}}" class="next-post">
+      <span class="post-info">Next Post</span>
+      <span class="post-title">{{title}}</span>
+    </a>
+  {{/next_post}}
+  </footer>-->
 
 {{/post}}

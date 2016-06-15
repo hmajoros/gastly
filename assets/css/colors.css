@@ -1,0 +1,25 @@
+.bg-1, .bg-1-hover:hover {
+  background-color: #2c3b8d; }
+
+.bg-2, .bg-2-hover:hover {
+  background-color: #13615d; }
+
+.bg-3, .bg-3-hover:hover {
+  background-color: #9b3c51; }
+
+.bg-4, .bg-4-hover:hover {
+  background-color: #645718; }
+
+.bg-1-hover {
+  background-color: #202b66; }
+
+.bg-2-hover {
+  background-color: #0b3634; }
+
+.bg-3-hover {
+  background-color: #762e3e; }
+
+.bg-4-hover {
+  background-color: #3b330e; }
+
+/*# sourceMappingURL=colors.css.map */

@@ -5,322 +5,166 @@
 a {
   text-decoration: none; }
 
-.btn {
-  display: inline-block;
-  min-width: 64px;
-  height: 36px;
-  padding: 0 16px;
-  border: none;
-  outline: none;
-  border-radius: 2px;
-  background-color: #1573BC;
-  color: white;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 36px;
-  font-size: 14px;
-  font-weight: 500;
-  text-transform: uppercase;
-  font-family: "Roboto","Helvetica","Arial",sans-serif;
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
-  .btn:hover, .btn:active, .btn:focus, .btn:visited {
-    color: white !important; }
-  .btn:active {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+.bg-1, .bg-1-hover:hover {
+  background-color: #2c3b8d; }
 
-.btn-small {
-  height: 20px;
-  margin-right: 4px;
-  font-size: 12px;
-  line-height: 20px;
-  padding: 0px 12px;
-  min-width: 0;
-  font-weight: 500;
-  letter-spacing: 0px;
-  box-shadow: none;
-  text-transform: none;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
-  .btn-small:active {
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+.bg-2, .bg-2-hover:hover {
+  background-color: #13615d; }
 
-.post-template header {
-  height: 80vh; }
-  .post-template header main {
-    position: absolute;
-    width: 100%;
-    top: 40vh;
-    transform: translateY(-50%);
-    padding: 16px 32px; }
-  .post-template header .home {
-    margin-bottom: 32px;
-    color: #999;
-    cursor: pointer;
-    transition: all 0.2s cubic-bezier(0.62, 0.28, 0.23, 0.99); }
-    .post-template header .home:hover {
-      color: #333; }
-  .post-template header #title {
-    margin-bottom: 48px;
-    font-family: 'Yeseva One';
-    font-size: 50px;
-    color: #333; }
-  .post-template header #info {
-    margin-bottom: 8px;
-    font-family: 'Roboto';
-    font-size: 12px;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 2px;
-    color: #777; }
-    .post-template header #info .tag:first-of-type {
-      margin-left: 24px; }
-    .post-template header #info .tag {
-      margin-left: 8px;
-      text-decoration: none;
-      color: #bbb;
-      transition: all 0.2s cubic-bezier(0.62, 0.28, 0.23, 0.99); }
-      .post-template header #info .tag:hover {
-        color: #999; }
-  .post-template header.img {
-    background-color: rgba(59, 78, 183, 0.75);
-    background-blend-mode: lighten;
-    background-size: cover;
-    background-position: center; }
-    .post-template header.img main {
-      background: rgba(200, 200, 200, 0.1); }
-    .post-template header.img .home {
-      color: rgba(255, 255, 255, 0.5); }
-      .post-template header.img .home:hover {
-        color: #eee; }
-    .post-template header.img #title {
-      color: #eee; }
-    .post-template header.img #info {
-      color: rgba(255, 255, 255, 0.5); }
-    .post-template header.img #info .tag {
-      color: rgba(255, 255, 255, 0.7); }
-      .post-template header.img #info .tag:hover {
-        color: #eee; }
-.post-template .content {
-  background: #f7f7f7;
-  padding: 32px; }
-  .post-template .content p {
-    margin-bottom: 18px;
-    font-family: 'Open Sans';
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 1.75em;
-    color: #333; }
-.post-template footer {
-  display: flex;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin-top: -1px;
-  background: #f7f7f7;
-  border-top: 1px solid #e7e7e7; }
-.post-template .prev-post, .post-template .next-post {
-  width: 50%;
-  cursor: pointer;
-  transition: all 0.2s cubic-bezier(0.62, 0.28, 0.23, 0.99); }
-  .post-template .prev-post > .post-info, .post-template .next-post > .post-info {
-    display: block;
-    margin-bottom: 6px;
-    font-family: 'Roboto';
-    font-size: 11px;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 2px;
-    color: #999; }
-  .post-template .prev-post > .post-title, .post-template .next-post > .post-title {
-    display: block;
-    font-family: 'Yeseva One';
-    font-size: 20px;
-    color: #444; }
-  .post-template .prev-post:hover, .post-template .next-post:hover {
-    background-color: #dedede;
-    text-decoration: none; }
-.post-template .filler {
-  width: 50%; }
-.post-template .prev-post {
-  left: 0;
-  text-align: left;
-  padding: 32px 12px 32px 32px; }
-.post-template .next-post {
-  right: 0;
-  text-align: right;
-  padding: 32px 32px 32px 12px; }
-@media screen and (min-width: 768px) {
-  .post-template body {
-    overflow: hidden; }
-  .post-template header {
-    position: relative;
-    height: 100vh;
-    width: 50%;
-    float: left; }
-    .post-template header main {
-      top: 50vh; }
-  .post-template .content {
-    position: relative;
-    height: 100vh;
-    margin-left: 50%;
-    padding: 64px;
-    overflow: scroll; }
-    .post-template .content hr {
-      border-color: #e7e7e7;
-      margin-top: 24px;
-      margin-bottom: 0; }
-  .post-template footer {
-    display: flex;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin-top: -1px; }
-  .post-template .prev-post, .post-template .next-post {
-    width: 50%;
-    cursor: pointer;
-    transition: all 0.2s cubic-bezier(0.62, 0.28, 0.23, 0.99); }
-    .post-template .prev-post > .post-info, .post-template .next-post > .post-info {
-      display: block;
-      margin-bottom: 6px;
-      font-family: 'Roboto';
-      font-size: 11px;
-      text-transform: uppercase;
-      font-weight: 700;
-      letter-spacing: 2px;
-      color: #999; }
-    .post-template .prev-post > .post-title, .post-template .next-post > .post-title {
-      display: block;
-      font-family: 'Yeseva One';
-      font-size: 20px;
-      color: #444; }
-    .post-template .prev-post:hover, .post-template .next-post:hover {
-      background-color: #dedede;
-      text-decoration: none; }
-  .post-template .filler {
-    width: 50%; }
-  .post-template .prev-post {
-    left: 0;
-    text-align: left;
-    padding: 32px 16px 32px 64px; }
-  .post-template .next-post {
-    right: 0;
-    text-align: right;
-    padding: 32px 64px 32px 16px; } }
+.bg-3, .bg-3-hover:hover {
+  background-color: #9b3c51; }
 
-.post-template .content img {
-  width: 100%; }
-.post-template .content h1, .post-template .content h2, .post-template .content h3, .post-template .content h4, .post-template .content h5, .post-template .content h6 {
-  font-family: 'Roboto Slab';
-  color: #333;
-  margin-top: 32px;
-  margin-bottom: 8px; }
-.post-template .content h1 {
-  font-size: 36px; }
-.post-template .content h2 {
-  font-size: 30px; }
-.post-template .content h3 {
-  font-size: 24px; }
-.post-template .content h4 {
-  font-family: 'Roboto';
-  font-size: 12px;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 2px;
-  color: #777; }
-.post-template .content em {
-  font-style: italic; }
-.post-template .content strong {
-  font-weight: 600; }
-.post-template .content blockquote {
-  margin-bottom: 16px;
-  padding: 10px 0 10px 20px;
-  border-left: 6px solid #3B4EB7; }
-  .post-template .content blockquote > p {
-    margin: 0;
-    font-family: 'Roboto Condensed';
-    font-size: 19px !important;
-    font-weight: 400; }
+.bg-4, .bg-4-hover:hover {
+  background-color: #645718; }
 
-.home-template header {
-  height: 80vh; }
-  .home-template header .face {
-    height: 80vh;
-    background-color: #3b4eb7;
+.bg-1-hover {
+  background-color: #202b66; }
+
+.bg-2-hover {
+  background-color: #0b3634; }
+
+.bg-3-hover {
+  background-color: #762e3e; }
+
+.bg-4-hover {
+  background-color: #3b330e; }
+
+.home-template {
+  background-color: #272727; }
+  .home-template header {
+    height: 64px; }
+  .home-template main {
+    padding: 64px !important; }
+    .home-template main article {
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 16px; }
+    .home-template main .post-info {
+      padding: 32px;
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: lighten;
+      border-radius: 2px; }
+      .home-template main .post-info .date {
+        margin-bottom: 8px;
+        font-family: 'Roboto';
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: rgba(255, 255, 255, 0.6); }
+      .home-template main .post-info .title {
+        display: block;
+        margin-bottom: 8px;
+        padding-bottom: 8px;
+        font-family: 'Yeseva One';
+        font-size: 40px;
+        color: #efefef;
+        text-shadow: 0 0 50px black;
+        text-decoration: none; }
+        .home-template main .post-info .title:hover {
+          border-bottom: 1px dashed white;
+          padding-bottom: 7px; }
+      .home-template main .post-info .excerpt {
+        margin-bottom: 32px;
+        font-family: 'Open Sans';
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.5;
+        color: #fff;
+        text-shadow: 0 0 25px black; }
+      .home-template main .post-info .btn-more {
+        display: inline-block;
+        color: #272727;
+        font-family: 'Roboto';
+        font-size: 12px;
+        font-weight: 600;
+        background: white;
+        padding: 10px 24px;
+        border-radius: 2px;
+        text-decoration: none;
+        transition: all 0.2s cubic-bezier(0.62, 0.28, 0.23, 0.99);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+        .home-template main .post-info .btn-more:hover {
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+    .home-template main .masonry {
+      -moz-column-width: 25em;
+      -webkit-column-width: 25em;
+      -moz-column-gap: 16px;
+      -webkit-column-gap: 16px;
+      column-width: 25em;
+      column-gap: 16px; }
+    .home-template main article.featured {
+      padding: 0; }
+      .home-template main article.featured .post-info {
+        padding-right: 50%; }
+      .home-template main article.featured .date:after {
+        content: ' | FEATURED';
+        opacity: .75; }
+
+.post-template {
+  background-color: #272727; }
+  .post-template .container-fluid {
+    padding: 64px !important; }
+  .post-template article header {
+    height: 350px;
+    padding: 32px;
     background-size: cover;
     background-position: center;
-    background-blend-mode: screen; }
-  .home-template header .info {
-    position: absolute;
-    top: 40vh;
-    text-align: center;
-    transform: translateY(-50%);
-    mix-blend-mode: overlay; }
-    .home-template header .info #name {
-      margin-bottom: 12px;
-      font-family: 'Yeseva One';
-      font-size: 20vw;
-      color: white; }
-    .home-template header .info #about {
-      font-family: 'Open Sans';
-      font-weight: 300;
-      font-size: 17px;
-      line-height: 1.75em;
-      color: white; }
-.home-template main {
-  background-color: #3B4EB7;
-  color: white;
-  padding-top: 32px;
-  padding-bottom: 32px; }
-  .home-template main .row {
-    padding: 0 32px; }
-  .home-template main article {
-    padding: 32px !important; }
-    .home-template main article .date {
-      margin-bottom: 8px;
+    background-blend-mode: lighten;
+    border-radius: 2px 2px 0 0; }
+  .post-template article main {
+    background-color: #e7e7e7;
+    padding: 64px 128px;
+    border-radius: 0 0 2px 2px; }
+    .post-template article main .date {
+      margin: 32px 0 8px 0;
       font-family: 'Roboto';
       font-size: 12px;
       text-transform: uppercase;
       font-weight: 700;
       letter-spacing: 2px;
-      color: rgba(255, 255, 255, 0.4); }
-    .home-template main article .title {
-      display: block;
-      margin-bottom: 16px;
+      color: #999; }
+    .post-template article main h1 {
       font-family: 'Yeseva One';
-      font-size: 40px;
-      text-decoration: none;
-      color: #efefef; }
-    .home-template main article .excerpt {
+      font-size: 48px;
+      margin-bottom: 32px;
+      color: #333; }
+    .post-template article main p {
+      margin-bottom: 16px;
       font-family: 'Open Sans';
-      font-size: 17px;
-      font-weight: 300;
-      line-height: 1.75em;
-      color: rgba(255, 255, 255, 0.6); }
-@media screen and (min-width: 650px) {
-  .home-template header {
-    height: 500px;
-    background-color: #fefefe; }
-    .home-template header .face {
-      width: 40%;
-      height: 500px; }
-    .home-template header .info {
-      position: absolute;
-      top: 250px;
-      margin-left: 40%;
-      padding: 0 64px;
-      mix-blend-mode: normal; }
-      .home-template header .info #name {
-        color: #333;
-        font-size: 5vw; }
-      .home-template header .info #about {
-        color: #999;
-        text-align: left; }
-  .home-template main {
-    padding-top: 64px;
-    padding-bottom: 64px; }
-    .home-template main .row {
-      padding: 0 64px; }
-    .home-template main article {
-      padding: 64px !important; } }
+      font-size: 15px;
+      line-height: 1.75; }
+  .post-template footer {
+    margin-top: 16px; }
+    .post-template footer .col-sm-6:first-child {
+      padding-right: 8px; }
+    .post-template footer .col-sm-6:last-child {
+      padding-left: 8px; }
+    .post-template footer .next-post, .post-template footer .prev-post {
+      display: block;
+      width: 100%;
+      min-height: 100px;
+      padding: 32px;
+      border-radius: 2px;
+      transition: all 0.3s cubic-bezier(0.62, 0.28, 0.23, 0.99);
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: lighten; }
+      .post-template footer .next-post:hover, .post-template footer .prev-post:hover {
+        text-decoration: none; }
+      .post-template footer .next-post .post-pager, .post-template footer .prev-post .post-pager {
+        margin-bottom: 8px;
+        font-family: 'Roboto';
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: rgba(255, 255, 255, 0.6); }
+      .post-template footer .next-post .post-title, .post-template footer .prev-post .post-title {
+        font-family: 'Yeseva One';
+        font-size: 30px;
+        color: white;
+        text-decoration: none; }
 
 /*# sourceMappingURL=main.css.map */

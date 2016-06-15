@@ -1,52 +1,28 @@
 .home-template {
-  
+  background-color: #272727;
+
   header {
-    height: 80vh;
-
-    .face {
-      height: 80vh;
-      background-color: rgb(59, 78, 183);
-      background-size: cover;
-      background-position: center;
-      background-blend-mode: screen;
-    }
-
-    .info {
-      position: absolute;
-      top: 40vh;
-      text-align: center;
-      transform: translateY(-50%);
-      mix-blend-mode: overlay;
-
-      #name {
-        margin-bottom: 12px;
-        font-family: 'Yeseva One';
-        font-size: 20vw;
-        color: white;
-      }
-
-      #about {
-        font-family: 'Open Sans';
-        font-weight: 300;
-        font-size: 17px;
-        line-height: 1.75em;
-        color: white; 
-      }
-    }
+    height: 64px;
   }
 
   main {
-    background-color: #3B4EB7;
-    color: white; 
-    padding-top: 32px;
-    padding-bottom: 32px;
-
-    .row {
-      padding: 0 32px;
-    }
+    padding: 64px !important;
 
     article {
-      padding: 32px !important;
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 16px;
+    }
+
+    .post-info {
+      padding: 32px;
+
+      background-size: cover;
+      background-position: center;
+      // background-color: $accent2;
+      background-blend-mode: lighten;
+
+      border-radius: 2px;
 
       .date {
         margin-bottom: 8px;
@@ -55,71 +31,76 @@
         text-transform: uppercase;
         font-weight: 700;
         letter-spacing: 2px;
-        color: rgba(255, 255, 255, 0.4);
+        color: rgba(255, 255, 255, 0.6);
       }
 
       .title {
         display: block;
-        margin-bottom: 16px;
+        margin-bottom: 8px;
+        padding-bottom: 8px;
         font-family: 'Yeseva One';
         font-size: 40px;
-        text-decoration: none;
         color: #efefef;
+        text-shadow: 0 0 50px black;
+        text-decoration: none;
+
+        &:hover {
+          border-bottom: 1px dashed white;
+          padding-bottom: 7px;
+        }
+          
       }
 
       .excerpt {
+        margin-bottom: 32px;
         font-family: 'Open Sans';
-        font-size: 17px;
+        font-size: 16px;
         font-weight: 300;
-        line-height: 1.75em;
-        color: rgba(255, 255, 255, 0.6);
+        line-height: 1.5;
+        color: #fff;
+        text-shadow: 0 0 25px black;
       }
-    }
-  }
+      
+      .btn-more {
+        display: inline-block;
+        color: #272727;
+        font-family: 'Roboto';
+        font-size: 12px;
+        font-weight: 600;
+        background: white;
+        padding: 10px 24px;
+        border-radius: 2px;
+        text-decoration: none;
+        transition: all .2s cubic-bezier(.62,.28,.23,.99);
+        box-shadow: $shadow1;
 
-  @media screen and (min-width: 650px) {
-
-    header {
-      height: 500px;
-      background-color: #fefefe;
-
-      .face {
-        width: 40%;
-        height: 500px;
-
-      }
-
-      .info {
-        position: absolute;
-        top: 250px;
-        margin-left: 40%;
-        padding: 0 64px;
-        mix-blend-mode: normal;
-
-        #name {
-          color: #333;
-          font-size: 5vw;
-        }
-
-        #about {
-          color: #999;
-          text-align: left;
+        &:hover {
+          box-shadow: $shadow3;
         }
       }
     }
 
-    main {
-      padding-top: 64px;
-      padding-bottom: 64px;
+    .masonry {
+      -moz-column-width: 25em;
+      -webkit-column-width: 25em;
+      -moz-column-gap: 16px;
+      -webkit-column-gap: 16px; 
+      column-width: 25em;
+      column-gap: 16px;
+    }
 
-      .row {
-        padding: 0 64px;
+    article.featured {
+      padding: 0;
+
+      .post-info {
+        padding-right: 50%;
       }
 
-      article {
-        padding: 64px !important;
-
+      .date:after {
+        content: ' | FEATURED';
+        opacity: .75;
       }
     }
+    
   }
 }

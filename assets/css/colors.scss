@@ -1,0 +1,34 @@
+$primaryLight: #3a4674;
+$primary: #303969;
+$primaryDark: #162d59;
+
+// $accent1: #3b4eb7;
+$accent1: #2c3b8d;
+$accent2: #13615d;
+$accent3: #9b3c51;
+$accent4: #645718;
+
+.bg-1 { background-color: $accent1; }
+.bg-2 { background-color: $accent2; }
+.bg-3 { background-color: $accent3; }
+.bg-4 { background-color: $accent4; }
+
+.bg-1-hover {
+  background-color: darken($accent1, 10%);
+  &:hover { @extend .bg-1; }
+}
+
+.bg-2-hover {
+  background-color: darken($accent2, 10%);
+  &:hover { @extend .bg-2; }
+}
+
+.bg-3-hover {
+  background-color: darken($accent3, 10%);
+  &:hover { @extend .bg-3; }
+}
+
+.bg-4-hover {
+  background-color: darken($accent4, 10%);
+  &:hover { @extend .bg-4; }
+}

@@ -1,17 +1,16 @@
 .post-template {
   background-color: #272727; }
   .post-template .container-fluid {
-    padding: 64px !important; }
+    padding: 16px !important; }
   .post-template article header {
     height: 350px;
-    padding: 32px;
     background-size: cover;
     background-position: center;
     background-blend-mode: lighten;
     border-radius: 2px 2px 0 0; }
   .post-template article main {
     background-color: #e7e7e7;
-    padding: 64px 128px;
+    padding: 32px 48px;
     border-radius: 0 0 2px 2px; }
     .post-template article main .date {
       margin: 32px 0 8px 0;
@@ -33,10 +32,8 @@
       line-height: 1.75; }
   .post-template footer {
     margin-top: 16px; }
-    .post-template footer .col-sm-6:first-child {
-      padding-right: 8px; }
-    .post-template footer .col-sm-6:last-child {
-      padding-left: 8px; }
+    .post-template footer .prev-post {
+      margin-bottom: 16px; }
     .post-template footer .next-post, .post-template footer .prev-post {
       display: block;
       width: 100%;
@@ -62,5 +59,16 @@
         font-size: 30px;
         color: white;
         text-decoration: none; }
+  @media screen and (min-width: 768px) {
+    .post-template .container-fluid {
+      padding: 64px !important; }
+    .post-template article main {
+      padding: 64px 128px; }
+    .post-template footer .prev-post {
+      margin-bottom: 0; }
+    .post-template footer .col-sm-6:first-child {
+      padding-right: 8px; }
+    .post-template footer .col-sm-6:last-child {
+      padding-left: 8px; } }
 
 /*# sourceMappingURL=post.css.map */

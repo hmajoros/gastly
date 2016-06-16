@@ -2,14 +2,13 @@
   background-color: #272727;
 
   .container-fluid {
-    padding: 64px !important;
+    padding: 16px !important;
   }
 
   article {
 
     header {
       height: 350px;
-      padding: 32px;
       background-size: cover;
       background-position: center;
       background-blend-mode: lighten;
@@ -18,7 +17,7 @@
 
     main {
       background-color: #e7e7e7;
-      padding: 64px 128px;
+      padding: 32px 48px;
       border-radius: 0 0 2px 2px;
       
       .date {
@@ -49,15 +48,11 @@
 
   footer {
     margin-top: 16px;
-
-    .col-sm-6:first-child {
-      padding-right: 8px;
-    }
-
-    .col-sm-6:last-child {
-      padding-left: 8px;
-    }
     
+    .prev-post {
+      margin-bottom: 16px;
+    }
+
     .next-post, .prev-post {
       display: block;
       width: 100%;
@@ -87,6 +82,29 @@
         font-size: 30px;
         color: white;
         text-decoration: none;
+      }
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .container-fluid {
+      padding: 64px !important;
+    }
+
+    article main {
+      padding: 64px 128px;
+    }
+
+    footer {
+      .prev-post {
+        margin-bottom: 0;
+      }
+
+      .col-sm-6:first-child {
+        padding-right: 8px;
+      }
+
+      .col-sm-6:last-child {
+        padding-left: 8px;
       }
     }
   }

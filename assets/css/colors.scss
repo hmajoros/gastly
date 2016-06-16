@@ -6,12 +6,12 @@ $primaryDark: #162d59;
 $accent1: #2c3b8d;
 $accent2: #13615d;
 $accent3: #9b3c51;
-$accent4: #645718;
+// $accent4: #645718;
 
 .bg-1 { background-color: $accent1; }
 .bg-2 { background-color: $accent2; }
 .bg-3 { background-color: $accent3; }
-.bg-4 { background-color: $accent4; }
+// .bg-4 { background-color: $accent4; }
 
 .bg-1-hover {
   background-color: darken($accent1, 10%);
@@ -28,7 +28,7 @@ $accent4: #645718;
   &:hover { @extend .bg-3; }
 }
 
-.bg-4-hover {
+/*.bg-4-hover {
   background-color: darken($accent4, 10%);
   &:hover { @extend .bg-4; }
-}
+}*/

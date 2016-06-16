@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$shadow1".
-        on line 75 of /Users/henrymajoros/repos/ghost/content/themes/gengar/assets/css/index.scss
+        on line 68 of /Users/henrymajoros/repos/ghost/content/themes/gengar/assets/css/index.scss
 
-70:         background: white;
-71:         padding: 10px 24px;
-72:         border-radius: 2px;
-73:         text-decoration: none;
-74:         transition: all .2s cubic-bezier(.62,.28,.23,.99);
-75:         box-shadow: $shadow1;
-76: 
-77:         &:hover {
-78:           box-shadow: $shadow3;
-79:         }
-80:       }
+63:         background: white;
+64:         padding: 10px 24px;
+65:         border-radius: 2px;
+66:         text-decoration: none;
+67:         transition: all .2s cubic-bezier(.62,.28,.23,.99);
+68:         box-shadow: $shadow1;
+69: 
+70:         &:hover {
+71:           box-shadow: $shadow3;
+72:         }
+73:       }
 
 Backtrace:
-/Users/henrymajoros/repos/ghost/content/themes/gengar/assets/css/index.scss:75
+/Users/henrymajoros/repos/ghost/content/themes/gengar/assets/css/index.scss:68
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/script/tree/node.rb:50:in `perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:395:in `visit_prop'
@@ -95,4 +95,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$shadow1\".\A         on line 75 of /Users/henrymajoros/repos/ghost/content/themes/gengar/assets/css/index.scss\A \A 70:         background: white;\A 71:         padding: 10px 24px;\A 72:         border-radius: 2px;\A 73:         text-decoration: none;\A 74:         transition: all .2s cubic-bezier(.62,.28,.23,.99);\A 75:         box-shadow: $shadow1;\A 76: \A 77:         &:hover {\A 78:           box-shadow: $shadow3;\A 79:         }\A 80:       }"; }
+  content: "Error: Undefined variable: \"$shadow1\".\A         on line 68 of /Users/henrymajoros/repos/ghost/content/themes/gengar/assets/css/index.scss\A \A 63:         background: white;\A 64:         padding: 10px 24px;\A 65:         border-radius: 2px;\A 66:         text-decoration: none;\A 67:         transition: all .2s cubic-bezier(.62,.28,.23,.99);\A 68:         box-shadow: $shadow1;\A 69: \A 70:         &:hover {\A 71:           box-shadow: $shadow3;\A 72:         }\A 73:       }"; }

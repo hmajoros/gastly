@@ -7,9 +7,6 @@
 .bg-3, .bg-3-hover:hover {
   background-color: #9b3c51; }
 
-.bg-4, .bg-4-hover:hover {
-  background-color: #645718; }
-
 .bg-1-hover {
   background-color: #202b66; }
 
@@ -19,7 +16,9 @@
 .bg-3-hover {
   background-color: #762e3e; }
 
-.bg-4-hover {
-  background-color: #3b330e; }
+/*.bg-4-hover {
+  background-color: darken($accent4, 10%);
+  &:hover { @extend .bg-4; }
+}*/
 
 /*# sourceMappingURL=colors.css.map */

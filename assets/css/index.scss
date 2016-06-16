@@ -6,7 +6,7 @@
   }
 
   main {
-    padding: 64px !important;
+    padding: 32px !important;
 
     article {
       display: inline-block;
@@ -36,19 +36,12 @@
 
       .title {
         display: block;
-        margin-bottom: 8px;
-        padding-bottom: 8px;
+        margin-bottom: 16px;
         font-family: 'Yeseva One';
         font-size: 40px;
         color: #efefef;
         text-shadow: 0 0 50px black;
         text-decoration: none;
-
-        &:hover {
-          border-bottom: 1px dashed white;
-          padding-bottom: 7px;
-        }
-          
       }
 
       .excerpt {
@@ -101,6 +94,11 @@
         opacity: .75;
       }
     }
-    
+  }
+
+  @media screen and (min-width: 768px) {
+    main {
+      padding: 64px !important;
+    }
   }
 }

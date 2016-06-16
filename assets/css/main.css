@@ -14,9 +14,6 @@ a {
 .bg-3, .bg-3-hover:hover {
   background-color: #9b3c51; }
 
-.bg-4, .bg-4-hover:hover {
-  background-color: #645718; }
-
 .bg-1-hover {
   background-color: #202b66; }
 
@@ -26,15 +23,16 @@ a {
 .bg-3-hover {
   background-color: #762e3e; }
 
-.bg-4-hover {
-  background-color: #3b330e; }
-
+/*.bg-4-hover {
+  background-color: darken($accent4, 10%);
+  &:hover { @extend .bg-4; }
+}*/
 .home-template {
   background-color: #272727; }
   .home-template header {
     height: 64px; }
   .home-template main {
-    padding: 64px !important; }
+    padding: 32px !important; }
     .home-template main article {
       display: inline-block;
       width: 100%;
@@ -55,16 +53,12 @@ a {
         color: rgba(255, 255, 255, 0.6); }
       .home-template main .post-info .title {
         display: block;
-        margin-bottom: 8px;
-        padding-bottom: 8px;
+        margin-bottom: 16px;
         font-family: 'Yeseva One';
         font-size: 40px;
         color: #efefef;
         text-shadow: 0 0 50px black;
         text-decoration: none; }
-        .home-template main .post-info .title:hover {
-          border-bottom: 1px dashed white;
-          padding-bottom: 7px; }
       .home-template main .post-info .excerpt {
         margin-bottom: 32px;
         font-family: 'Open Sans';
@@ -101,21 +95,23 @@ a {
       .home-template main article.featured .date:after {
         content: ' | FEATURED';
         opacity: .75; }
+  @media screen and (min-width: 768px) {
+    .home-template main {
+      padding: 64px !important; } }
 
 .post-template {
   background-color: #272727; }
   .post-template .container-fluid {
-    padding: 64px !important; }
+    padding: 16px !important; }
   .post-template article header {
     height: 350px;
-    padding: 32px;
     background-size: cover;
     background-position: center;
     background-blend-mode: lighten;
     border-radius: 2px 2px 0 0; }
   .post-template article main {
     background-color: #e7e7e7;
-    padding: 64px 128px;
+    padding: 32px 48px;
     border-radius: 0 0 2px 2px; }
     .post-template article main .date {
       margin: 32px 0 8px 0;
@@ -137,10 +133,8 @@ a {
       line-height: 1.75; }
   .post-template footer {
     margin-top: 16px; }
-    .post-template footer .col-sm-6:first-child {
-      padding-right: 8px; }
-    .post-template footer .col-sm-6:last-child {
-      padding-left: 8px; }
+    .post-template footer .prev-post {
+      margin-bottom: 16px; }
     .post-template footer .next-post, .post-template footer .prev-post {
       display: block;
       width: 100%;
@@ -166,5 +160,16 @@ a {
         font-size: 30px;
         color: white;
         text-decoration: none; }
+  @media screen and (min-width: 768px) {
+    .post-template .container-fluid {
+      padding: 64px !important; }
+    .post-template article main {
+      padding: 64px 128px; }
+    .post-template footer .prev-post {
+      margin-bottom: 0; }
+    .post-template footer .col-sm-6:first-child {
+      padding-right: 8px; }
+    .post-template footer .col-sm-6:last-child {
+      padding-left: 8px; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,8 +1,22 @@
 .post-template {
   background-color: #272727;
 
+  header {
+    height: 64px;
+    padding: 0 16px;
+
+    a {
+      width: 48px;
+      text-align: center;
+      line-height: 64px;
+      color: rgba(255,255,255, 0.5);
+
+      &:hover { color: rgba(255,255,255, 0.75); }
+    }
+  }
+
   .container-fluid {
-    padding: 16px !important;
+    padding: 0 16px 16px !important;
   }
 
   article {
@@ -86,8 +100,12 @@
     }
   }
   @media screen and (min-width: 768px) {
+    header {
+      padding: 0 64px;
+    }
+
     .container-fluid {
-      padding: 64px !important;
+      padding: 0 64px 64px !important;
     }
 
     article main {

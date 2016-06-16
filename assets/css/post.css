@@ -1,7 +1,17 @@
 .post-template {
   background-color: #272727; }
+  .post-template header {
+    height: 64px;
+    padding: 0 16px; }
+    .post-template header a {
+      width: 48px;
+      text-align: center;
+      line-height: 64px;
+      color: rgba(255, 255, 255, 0.5); }
+      .post-template header a:hover {
+        color: rgba(255, 255, 255, 0.75); }
   .post-template .container-fluid {
-    padding: 16px !important; }
+    padding: 0 16px 16px !important; }
   .post-template article header {
     height: 350px;
     background-size: cover;
@@ -60,8 +70,10 @@
         color: white;
         text-decoration: none; }
   @media screen and (min-width: 768px) {
+    .post-template header {
+      padding: 0 64px; }
     .post-template .container-fluid {
-      padding: 64px !important; }
+      padding: 0 64px 64px !important; }
     .post-template article main {
       padding: 64px 128px; }
     .post-template footer .prev-post {
